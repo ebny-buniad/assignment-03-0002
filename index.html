@@ -24,10 +24,16 @@
                     colors: {
                         transparent: 'transparent',
                         clifford: '#da373d',
-                        'primary-color': '#179800'
+                        'primary-color': '#179800',
+                        'secondary-color': '#EFEBE3'
                     },
                     fontFamily: {
                         'font-sora': '"Sora", "serif"',
+                    },
+
+                    backgroundImage: {
+                        'custom-gradient': 'linear-gradient(0deg, rgba(218,245,215,0.5018382352941176) 0%, rgba(255,255,255,0.3701855742296919) 100%)',
+                        'footer-bg': "url(./assets/bg.jpg)",
                     }
                 }
             }
@@ -38,7 +44,7 @@
 <body class="font-font-sora px-1">
     <header>
         <!-- Nav start -->
-        <nav class="max-w-7xl mx-auto border">
+        <nav class="max-w-7xl mx-auto">
             <div class="navbar">
                 <div class="navbar-start">
                     <a class="" href="index.html"><img class="hidden md:block" src="assets/logo-header.png" alt=""> <img
@@ -85,6 +91,22 @@
             </div>
         </nav>
         <!-- Nav end -->
+        <!-- Banner section start -->
+        <div class="bg-custom-gradient">
+            <div class="text-center mt-16 max-sm:mt-8 space-y-3">
+                <h1 class="text-6xl font-semibold leading-[71px] max-sm:text-4xl">Freshness <span
+                        class="text-primary-color">You Can <br class="hidden md:block">
+                        Count</span> On, Prices You’ll Love<span
+                        class="animate-bounce inline-block py-1 px-2 border border-primary-color text-primary-color rounded text-3xl max-sm:text-2xl mx-2">!</span>
+                </h1>
+                <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+                    <br>
+                    staples, we’ve got you covered every day!
+                </p>
+                <img class="mx-auto w-5/12 max-sm:w-11/12" src="assets/hero-vegetables.png" alt="">
+            </div>
+        </div>
+        <!-- Banner section end -->
     </header>
 
     <main>
